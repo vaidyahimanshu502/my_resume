@@ -8,7 +8,7 @@ main{
 /*Body header*/
 #body-header{
     height: 65vh;
-    background-image: url('/assets/images/pexels-hasan-albari-1229861.jpg');
+    background-image: url('assets/images/pexels-hasan-albari-1229861.jpg');
     background-size: cover;
     background-position: bottom;
     background-attachment: fixed;
