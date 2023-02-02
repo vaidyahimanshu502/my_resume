@@ -1,0 +1,621 @@
+body{
+    margin: 0px;
+}
+main{
+    position: relative;
+    width: 100%;
+}
+/*Body header*/
+#body-header{
+    height: 65vh;
+    background-image: url('/assets/images/pexels-hasan-albari-1229861.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+/*nav-List*/
+.horizontal-list{
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+   
+}
+.horizontal-list li{
+    display: inline-block;
+    margin: 0px 8px 8px 0px;
+}
+.horizontal-list li a{
+    color: #acafb5;
+    text-decoration: none;
+}
+.horizontal-list li a:hover{
+    color: rgb(118, 125, 137);
+    border-bottom: 3px solid rgb(131, 137, 143);
+    transition: 0.5s, border-bottom 0.4s;
+}
+.text-center{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+#name{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    color: #bac0cd;
+    border-bottom:3px solid #a2a9bb;
+    border-radius: 20px;
+}
+#for-name{
+    display: flex;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0px 8px 8px 0px;
+    justify-content: center;
+}
+#for-name h1:hover{
+    background-color: rgb(204, 207, 210, 0.3);
+}
+.social-icon li a i{
+    padding: 10px;
+    border-radius: 50%;
+    color: #cdd5dd;
+}
+.social-icon li a i:hover{
+    box-shadow: 0px 0px 6px 4px #a7afb7;
+    border:none;
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+.social-icon li{
+    display: inline-block;
+}
+
+/* About */
+
+#about{
+    height: auto;
+    width: 100%;
+}
+
+#my-image{
+    height: 12rem;
+    width: 12rem;
+    margin: auto;
+    margin-top: -17vh;
+}
+
+#my-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 6px lightskyblue ;
+
+}
+#about-para{
+    font-size: 20px;
+    text-justify: auto;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    text-align: justify;
+    margin: 0px 200px 0px 200px;
+    position: relative;
+}
+b{
+    color: #2857a4;
+}
+
+
+/*Skills*/
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section-heading{
+    width: auto;
+    padding: 20px 10px 10px;
+    font-weight: 400;
+}
+.section-heading span{
+    font-size: 40px;
+    color: rgb(13, 104, 160);
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+section:nth-child(2n){
+    background-color: rgb(247, 236, 236);
+}
+
+section:nth-child(2n+1){
+    background-color: white;
+}
+
+#skills-img{
+height: 40px;
+width: 40px;
+background: linear-gradient(to right bottom);
+}
+/* for Java */
+.skills-display{
+    width: 70%;
+    /* height: 400px;
+    border: 2px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.skills-progress{
+    width: 7rem;
+    height: 1.4rem;
+    background-color: lightgrey;
+    border-radius: 0.8rem;
+    border: 2px solid black;
+    margin: 1rem;
+}
+.mbblue{
+    background-color: blue;
+}
+.skill-name{
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+.eighty-five-percent{
+    width: 85%;
+    height: inherit;
+    border-radius: 0.8rem 0rem 0rem 0.8rem;
+}
+
+/* for DSA */
+.sixty-five-percent{
+    width: 65%;
+    height: inherit;
+    border-radius: 0.8rem 0rem 0rem 0.8rem;
+}
+.mborange{
+  background-color: rgb(219, 165, 67);
+}
+
+/* for Html */
+.ninety-five-percent{
+    width: 95%;
+    height: inherit;
+    border-radius: 0.8rem 0rem 0rem 0.8rem;
+}
+.mbgreen{
+  background-color: rgb(81, 213, 55);
+}
+
+/* for Spring Boot */
+.seventy-five-percent{
+    width: 75%;
+    height: inherit;
+    border-radius: 0.8rem 0rem 0rem 0.8rem;
+}
+.mbyellow{
+  background-color: rgb(180, 204, 47);
+}
+
+/* for mysql */
+
+.mbredish{
+    background-color: rgb(235, 171, 171);
+}
+
+/* for javascript */
+.mbcolor{
+    background-color: aqua;
+}
+
+/* for React */
+.mbr{
+    background-color: #7590db;
+}
+/* for node js */
+
+.eighty-percent{
+    width: 80%;
+    height: inherit;
+    border-radius: 0.8rem 0rem 0rem 0.8rem;
+}
+.mbrr{
+  background-color: rgb(228, 65, 116);
+}
+
+/* Experience */
+#exicon{
+    height: 40px;
+    width: 40px;
+    color: blue;
+}
+
+.imgHead{
+  display: inline-block;
+  height: 48px;
+  width: 48px;
+}
+
+.timeline{
+    position: relative;
+    width: auto;
+}
+.timeline-box{
+    position: relative;
+    width: 40%;
+    left: 5%;
+    min-height: 150px;
+}
+.mb75px span img{
+   background-color: #2857a4;
+   border-radius: 50%;
+}
+#experience{
+    position: relative;
+    width: 100%;
+}
+/* Portfolio */
+#portfolio-container {
+    width: 80%;
+    min-width: 725px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+  }
+  
+  .portfolio-image-container {
+    width: 25%;
+    height: auto;
+    min-width: 150px;
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .portfolio-image-container img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .portfolio-image-container:hover {
+    box-shadow: 0px 0px 12px 0px #a7bed5;
+  }
+  
+  .portfolio-image-container:hover .middle {
+    cursor: pointer;
+    opacity: 1;
+  }
+  
+  .portfolio-image-container .middle {
+    background-color: rgba(53, 53, 53, 0.315);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+  }
+  
+  .portfolio-image-container .middle .portfolio-text {
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    color: white;
+  }
+/* Timeline container*/
+.timeline {
+    width: 75%;
+    min-width: 750px;
+    position: relative;
+    font-size: 1rem;
+  }
+  
+  .timeline-box {
+    position: relative;
+    margin: 1rem 0;
+    height: auto;
+    width: 40%;
+  }
+  
+  .timeline-box:nth-child(2n + 1) {
+    left: 5%;
+  }
+  
+  .timeline-box:nth-child(2n) {
+    left: 55%;
+  }
+  
+  .timeline-head {
+    text-align: right;
+  }
+  
+  .timeline-head img {
+    /* position: absolute; */
+    margin: 10px;
+  }
+  
+  .timeline-head h1 {
+    font-size: 1.5em;
+    margin-bottom: 0.25em;
+    color: #1262b3;
+  }
+  
+  .timeline-head h4 {
+    font-size: 1.25em;
+    color: #ff7b00;
+    display: inline-block;
+  }
+  
+  .timeline-head h6 {
+    font-size: 1.1em;
+    margin-bottom: 0.25em;
+  }
+  
+  .timeline-body {
+    padding: 4px;
+    text-align: justify;
+    line-height: 1.35em;
+  }
+  
+  .timeline-body p {
+    font-size: 1em;
+  }
+  
+  .timeline-divider {
+    height: 90%;
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    width: 0;
+    transform: translateX(-50%);
+    border-left: 4px dashed #cacaca;
+  }
+  
+  .divider-icon {
+    font-size: 2em;
+    color: #1262b3;
+    position: sticky;
+    top: 5%;
+    margin-left: -5px;
+    transform: rotate(90deg);
+  }
+    /* Contac Footer */
+
+    #contact {
+      background-image: linear-gradient(to top right, #2857a4, #403066);
+      color: white;
+      font-size: 1rem;
+    }
+    
+    #contact .section-heading {
+      color: white !important;
+    }
+    
+    #contact .social-links i:hover {
+      transform: scale(1.25);
+      transition: 0.3s;
+      text-shadow: 0px 0px 20px #a59f9f;
+    }
+    
+    .contact-container {
+      width: 90%;
+      min-width: 725px;
+      margin-bottom: 4rem;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      font-size: 1.25em;
+    }
+    
+    .contact-container .contact-form-container, .contact-container .address-container {
+      flex-basis: 40%;
+      overflow-x: hidden;
+    }
+    
+    .contact-container .contact-form-container .input-field {
+      width: 100%;
+      margin-bottom: 2rem;
+      padding-left: 1rem;
+      border: none;
+      height: 2.5rem;
+      font-size: 1em;
+      color: white;
+      border-bottom: 3px solid white;
+      background-color: #0000;
+    }
+    
+    .contact-container .contact-form-container textarea.input-field {
+      height: 4rem;
+      resize: none;
+    }
+    
+    .contact-container .contact-form-container .input-field:focus {
+      outline: none;
+      border-bottom: 3px solid #bebebe;
+    }
+    
+    .contact-container .contact-form-container .input-field::placeholder {
+      color: #bebebe;
+    }
+    
+    .contact-container .contact-form-container #submit {
+      display: block;
+      margin: 0 auto;
+      font-size: 0.75em;
+      padding: 0.5rem 1rem;
+    }
+    
+    .contact-container .contact-form-container #submit:hover {
+      color: #1262b3;
+    }
+    
+    .contact-container .address-container h2, .contact-container .address-container div {
+      margin: 0.8rem 0;
+    }
+    
+    .contact-container .address-container div, .contact-container .address-container p {
+      font-size: 0.85em;
+    }
+
+    /* Responsiveness */
+
+    @media only screen and (max-width: 572px) {
+      body {
+        font-size: 12px;
+      }
+    }
+    
+    /* Responsive Navbar*/
+    @media only screen and (max-width: 768px) {
+      .nav-menu li {
+        margin: 0px 4px;
+      }
+    }
+    
+    @media only screen and (max-width: 768px) {
+      #body-header {
+        font-size: 12px;
+        height: 35vh;
+        min-height: 350px;
+      }
+      #body-header #name-social-container {
+        padding-top: 6em;
+      }
+    }
+    
+    @media only screen and (max-width: 768px) {
+      #about #self-info {
+        width: 80%;
+        min-width: 0;
+      }
+      #about #profile-image {
+        min-width: 180px;
+      }
+    }
+    
+    @media only screen and (max-width: 768px) {
+      .contact-container {
+        min-width: 0;
+      }
+      .contact-container .contact-form-container {
+        margin-bottom: 5rem;
+      }
+      .contact-container .contact-form-container, .contact-container .address-container {
+        flex-basis: 80%;
+      }
+    }
+    
+    @media only screen and (max-width: 768px) {
+      .timeline {
+        width: 100%;
+        min-width: 0;
+      }
+      .timeline-divider {
+        height: 85%;
+        left: 5%;
+      }
+      .timeline-box {
+        margin: 2em;
+        width: 85%;
+      }
+      .timeline-box:nth-child(2n) {
+        left: 5%;
+      }
+    }
+    
+    @media only screen and (max-width: 768px) {
+      #portfolio-container {
+        min-width: 0;
+        justify-content: center;
+      }
+      .portfolio-image-container {
+        width: 45%;
+      }
+    }
+    
+    @media only screen and (max-width: 572px) {
+      #body-header {
+        font-size: 10px;
+        height: 45vh;
+        min-height: 280px;
+      }
+      #body-header .checkbtn {
+        display: block;
+      }
+      #body-header .nav-menu {
+        position: absolute;
+        min-width: 140px;
+        width: 20%;
+        height: auto;
+        background-color: rgba(150, 150, 150, 0.918);
+        top: 2.5em;
+        right: 5%;
+        box-shadow: 1px 1px 10px 4px white;
+        border-radius: 4px;
+        z-index: 100;
+        transition: all 0.3s;
+        opacity: 0;
+      }
+      #body-header .nav-menu li {
+        display: block;
+        padding: 0.2em;
+        padding-left: 16px;
+        line-height: 2.2em;
+        margin: 0;
+        text-align: left;
+      }
+      #body-header #check:checked ~ .nav-menu {
+        opacity: 1;
+      }
+      #name-social-container {
+        font-size: 10px;
+      }
+      #name-social-container #header-name {
+        letter-spacing: 0;
+      }
+      #name-social-container #header-name h1 {
+        margin: 0;
+      }
+    }
+    
+    @media only screen and (max-width: 572px) {
+      .timeline {
+        font-size: 14px;
+        padding: 0 1rem;
+      }
+    }
+    
+    @media only screen and (max-width: 572px) {
+      #contact .social-links {
+        font-size: 0.75em;
+      }
+      #contact .social-links i {
+        padding: 0 0.25em;
+      }
+    }
+    
+    @media only screen and (max-width: 572px) {
+      .skill-progress {
+        width: 70%;
+      }
+    }
+    
+    @media only screen and (max-width: 572px) {
+      #about #profile-image {
+        width: 25%;
+        min-width: 140px;
+      }
+    }
+    
+    @media only screen and (max-width: 572px) and (min-height: 730px) {
+      #body-header {
+        height: 35vh;
+      }
+    }
