@@ -7,10 +7,52 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
     <title>Himanshu Kr. Vaidya</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
+    <div id="scroll-progress-count">
+        <span><span id="scrolled">0</span>% Viewed</span>
+    </div>
+    <div class="scroll-progress">
+        <div class="scroll-progress-bar"></div>
+    </div>
+    
     <header id="body-header">
-        <ul class="horizontal-list text-center">
+     <nav>
+         
+        <!-- <div class="dropdown-menu text-right">
+            <div class="bars">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="dropdown-list nav-menu">
+                <ul class="no-list-style">
+                    <li>
+                        <a href="#"> Home </a>
+                    </li>
+                    <li>
+                        <a href="#about"> About </a>
+                    </li>
+                    <li>
+                        <a href="#skills"> Skills </a>
+                    </li>
+                    <li>
+                        <a href="#experience">Experience</a>
+                    </li>
+                    <li>
+                        <a href="#education">Education</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div> -->
+
+
+        <ul class="horizontal-list text-center nav-menu">
             <li>
                 <a href="#home">Home</a>
             </li>
@@ -33,7 +75,7 @@
                 <a href="#contact">Contact</a>
             </li>
         </ul>
-    
+    </nav>
 
         <div id="name-social-container">
             <div id="for-name">
@@ -42,19 +84,22 @@
 
             <div>
                 <ul class="text-center social-icon">
-                    <li><a href="#" ><i class="fab fa-linkedin-in"></i></a></li>
-                    <li>
+                    <li><a href="https://www.linkedin.com/in/himanshu-kumar-vaidya-9675151b8" ><i class="fab fa-linkedin-in"></i></a></li>
+                    <!-- <li>
                         <a href="#" ><i class="fab fa-stack-overflow"></i></a>
-                    </li>
-                    <li>
+                    </li> -->
+                    <!-- <li>
                         <a href="#" ><i class="fab fa-google-plus-g"></i></a>
+                    </li> -->
+                    <li>
+                        <a href="https://github.com/vaidyahimanshu502"><i class="fa-brands fa-github"></i></a>
                     </li>
                     <li>
-                        <a href="#" ><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.facebook.com/himanshu.vaidya.393/" ><i class="fab fa-facebook-f"></i></a>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a href="#" ><i class="fab fa-quora"></i></a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
             
@@ -89,7 +134,7 @@
 
             <div class="skills-display">
                 <div class="skills-progress">
-                    <div class="eighty-five-percent mbblue">
+                    <div class="eighty-five-percent mbblue" data-bar-width="85">
                         <div class="skill-name">
                             <span>Java</span>
                         </div>
@@ -98,7 +143,7 @@
 
                 
                 <div class="skills-progress">
-                    <div class="sixty-five-percent mborange">
+                    <div class="sixty-five-percent mborange" data-bar-width="65">
                         <div class="skill-name">
                             <span>DSA</span>
                         </div>
@@ -106,7 +151,7 @@
                 </div>
 
                 <div class="skills-progress">
-                    <div class="ninety-five-percent mbgreen">
+                    <div class="ninety-five-percent mbgreen" data-bar-width="95">
                         <div class="skill-name">
                             <span>HTML-5</span>
                         </div>
@@ -114,7 +159,7 @@
                 </div>
 
                 <div class="skills-progress">
-                    <div class="eighty-five-percent mbgreen">
+                    <div class="eighty-five-percent mbgreen" data-bar-width="85">
                         <div class="skill-name">
                             <span>CSS-3</span>
                         </div>
@@ -122,7 +167,7 @@
                 </div>
 
                 <div class="skills-progress">
-                    <div class="seventy-five-percent mbyellow">
+                    <div class="seventy-five-percent mbyellow" data-bar-width="75">
                         <div class="skill-name">
                             <span>Spring Boot</span>
                         </div>
@@ -130,7 +175,7 @@
                 </div>
 
                 <div class="skills-progress">
-                    <div class="seventy-five-percent mbredish">
+                    <div class="seventy-five-percent mbredish" data-bar-width="75">
                         <div class="skill-name">
                             <span>MySQL</span>
                         </div>
@@ -138,7 +183,7 @@
                 </div>
 
                 <div class="skills-progress">
-                    <div class="eighty-five-percent mbcolor">
+                    <div class="eighty-five-percent mbcolor" data-bar-width="85">
                         <div class="skill-name">
                             <span>JavaScript</span>
                         </div>
@@ -146,7 +191,7 @@
                 </div>
 
                 <div class="skills-progress">
-                    <div class="eighty-five-percent mbr">
+                    <div class="eighty-five-percent mbr" data-bar-width="85">
                         <div class="skill-name">
                             <span>React.js</span>
                         </div>
@@ -154,7 +199,7 @@
                 </div>
 
                 <div class="skills-progress">
-                    <div class="eighty-percent mbrr">
+                    <div class="eighty-percent mbrr" data-bar-width="80">
                         <div class="skill-name">
                             <span>Node.js</span>
                         </div>
@@ -245,40 +290,38 @@
             </div>
             <div id="portfolio-container">
                 <div class="portfolio-image-container">
-                    <!-- <h1>Calculator</h1> -->
-                    <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000025_1550237330_codezen_2.png">
+                    <h1 style="color:blue;text-align: center;">Calculator</h1>
                     <div class="middle text-center">
+                        
                         <div class="portfolio-text">
-                            <h1>Calculator</h1>
-                            <!-- <img class="imgHead" src="/assets/images/./images/calculator.webp" alt=""> -->
-                            This app used to perform mathematical operations such as +, -, *, /, % etc.
+                           <p style="padding: 10px;">This app used to perform mathematical operations such as +, -, *, /, % etc.</p>
+                            <a href="vaidyahimanshu502.github.io/calculator_project/">Go to Pro</a>
                         </div>
                     </div>
                 </div>
                 <div class="portfolio-image-container">
-                    <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000025_1550237330_codezen_2.png">
+                   <h1 style="color:blue;text-align: center;">Resume</h1>
                     <div class="middle text-center">
                         <div class="portfolio-text">
-                            <h1>TicTacToe</h1>
-                            It is 3*3 board game which can be played by two people.
+                            <p style="padding: 10px;">This project is created by using HTML,CSS and,JavaScript to show my creativity.</p>
+                            <a href="vaidyahimanshu502.github.io/my_resume/">Go to Proj</a>
                         </div>
                     </div>
                 </div>
                 <div class="portfolio-image-container">
-                    <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000025_1550237330_codezen_2.png">
+                    <h1 style="color:blue;text-align: center;">Ping_Pong Game</h1>
                     <div class="middle text-center">
                         <div class="portfolio-text">
-                            <h1>Othello</h1>
-                            It is 8*8 board game which is also played beteen two people, in this game 
-                            both players have their different sign...
+                           <p style="padding: 10px;">This game is also created by using Html,Css and, JavaScript. It can be played between two players.</p>
+                           <a href="vaidyahimanshu502.github.io/ping_pong_game/">Go to Game</a>
                         </div>
                     </div>
                 </div>
                 <div class="portfolio-image-container">
-                    <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000024_1550237299_codezen.png">
+                   <h1 style="color:blue;text-align: center;">Real Estate WebApp</h1>
                     <div class="middle text-center">
-                        <div class="portfolio-text">Ressume</div>
-                        This is url bassed ressume which is available on github and sandbox which anyone can see who want.
+                        <p style="padding: 10px;">This webApp is created by using ReactJs. Just for show demo of UI.</p>
+                        <a href="vaidyahimanshu502.github.io/real_estate_react/">Go to repository</a>
                     </div>
                 </div>
                 <div class="portfolio-image-container">
@@ -300,7 +343,7 @@
 
  
             <div class="section-heading">
-                <i class="far fa-address-card"></i><span>Contact</span>
+                <i class="far fa-address-card"></i>&nbsp;&nbsp;&nbsp;<span style="color: white;">Contact Me</span>
             </div>
             <div class="contact-container">
                 <div class="contact-form-container">
@@ -308,7 +351,7 @@
                         <div><input type="text" placeholder="Your Name" class="input-field" required></div>
                         <div><input type="email" placeholder="Your Email" class="input-field" required></div>
                         <div><textarea class="input-field" placeholder="Message"></textarea></div>
-                        <div><a href="mailto:vaidyahimanshu502@gmail.com"><input type="button" class="white-border-transparent-button" id="submit" value="SEND MESSAGE"></a></div>
+                        <div><a href="mailto:vaidyahimanshu502@gmail.com"><input type="button" class="white-border-transparent-button" id="submit" value="Submit Your Resounse"></a></div>
                     </form>
                 </div>
                 <div class="address-container">
@@ -323,23 +366,26 @@
             </div>
             <div class="bottom-list">
                 <ul class="horizontal-list text-center social-links" style="margin: 0;">
-                    <li><a href="#" ><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/himanshu-kumar-vaidya-9675151b8" ><i class="fab fa-linkedin-in"></i></a></li>
                     <li>
-                        <a href="#" ><i class="fab fa-stack-overflow"></i></a>
+                        <a href="https://github.com/vaidyahimanshu502" ><i class="fa-brands fa-square-github"></i></a>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a href="#" ><i class="fab fa-google-plus-g"></i></a>
-                    </li>
+                    </li> -->
                     <li>
-                        <a href="#" ><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.facebook.com/himanshu.vaidya.393/" ><i class="fab fa-facebook-f"></i></a>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a href="#" ><i class="fab fa-quora"></i></a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
 
         </section>
     </main>
+    <!-- <script type="module" src="script.js"></script> -->
+    <script defer src="script.js"></script>
+	<script defer src="skills.js"></script>
 </body>
 </html>

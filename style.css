@@ -8,10 +8,12 @@ main{
 /*Body header*/
 #body-header{
     height: 65vh;
-    background-image: url('assets/images/pexels-hasan-albari-1229861.jpg');
+    background-image: linear-gradient(blue, red);
+    
     background-size: cover;
     background-position: bottom;
     background-attachment: fixed;
+   background-origin: content-box;
 }
 /*nav-List*/
 .horizontal-list{
@@ -25,12 +27,12 @@ main{
     margin: 0px 8px 8px 0px;
 }
 .horizontal-list li a{
-    color: #acafb5;
+    color: rgb(235, 227, 227);
     text-decoration: none;
 }
 .horizontal-list li a:hover{
-    color: rgb(118, 125, 137);
-    border-bottom: 3px solid rgb(131, 137, 143);
+    color: rgb(199, 207, 220);
+    border-bottom: 3px solid rgb(207, 219, 231);
     transition: 0.5s, border-bottom 0.4s;
 }
 .text-center{
@@ -39,10 +41,10 @@ main{
     font-weight: 700;
 }
 #name{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 50px;
-    color: #bac0cd;
-    border-bottom:3px solid #a2a9bb;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 45px;
+    color: white;
+    border-bottom:3px solid #091228;
     border-radius: 20px;
 }
 #for-name{
@@ -53,7 +55,7 @@ main{
     justify-content: center;
 }
 #for-name h1:hover{
-    background-color: rgb(204, 207, 210, 0.3);
+    background-color: rgba(16, 77, 138, 0.5);
 }
 .social-icon li a i{
     padding: 10px;
@@ -262,28 +264,33 @@ background: linear-gradient(to right bottom);
     width: 80%;
     min-width: 725px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: row; 
+     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 4rem;
   }
   
   .portfolio-image-container {
     width: 25%;
-    height: auto;
-    min-width: 150px;
+    height: 400px;
+    min-width: 200px;
     margin: 1rem;
     position: relative;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y:hidden;
+    background-image: linear-gradient(to bottom right, rgb(30, 174, 184),white);
+    box-shadow: 20px 20px;
   }
   
   .portfolio-image-container img {
     width: 100%;
     height: auto;
+    /* background-color: skyblue; */
   }
   
   .portfolio-image-container:hover {
-    box-shadow: 0px 0px 12px 0px #a7bed5;
+    box-shadow: 0px 0px 12px 0px #941010;
   }
   
   .portfolio-image-container:hover .middle {
@@ -291,8 +298,8 @@ background: linear-gradient(to right bottom);
     opacity: 1;
   }
   
-  .portfolio-image-container .middle {
-    background-color: rgba(53, 53, 53, 0.315);
+  /* .portfolio-image-container .middle {
+    background-color: rgba(7, 30, 121, 0.315);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -301,12 +308,13 @@ background: linear-gradient(to right bottom);
     width: 100%;
     opacity: 0;
     transition: 0.5s ease;
-  }
+  } */
   
   .portfolio-image-container .middle .portfolio-text {
-    padding: 1.5rem;
+    padding: 1rem;
     font-size: 1.5rem;
-    color: white;
+    color: rgb(17, 17, 17);
+    
   }
 /* Timeline container*/
 .timeline {
@@ -343,12 +351,12 @@ background: linear-gradient(to right bottom);
   .timeline-head h1 {
     font-size: 1.5em;
     margin-bottom: 0.25em;
-    color: #1262b3;
+    color: #135ca4;
   }
   
   .timeline-head h4 {
     font-size: 1.25em;
-    color: #ff7b00;
+    color: #d7274a;
     display: inline-block;
   }
   
@@ -388,19 +396,19 @@ background: linear-gradient(to right bottom);
     /* Contac Footer */
 
     #contact {
-      background-image: linear-gradient(to top right, #2857a4, #403066);
-      color: white;
+      background-image: linear-gradient(red,blue);
+      color: rgb(234, 222, 222);
       font-size: 1rem;
     }
     
     #contact .section-heading {
-      color: white !important;
+      color: rgb(242, 237, 237) !important;
     }
     
     #contact .social-links i:hover {
       transform: scale(1.25);
       transition: 0.3s;
-      text-shadow: 0px 0px 20px #a59f9f;
+      text-shadow: 0px 0px 20px #e0caca;
     }
     
     .contact-container {
@@ -426,9 +434,9 @@ background: linear-gradient(to right bottom);
       border: none;
       height: 2.5rem;
       font-size: 1em;
-      color: white;
+      color: rgb(210, 177, 177);
       border-bottom: 3px solid white;
-      background-color: #0000;
+      background-color: #c4999900;
     }
     
     .contact-container .contact-form-container textarea.input-field {
@@ -453,7 +461,7 @@ background: linear-gradient(to right bottom);
     }
     
     .contact-container .contact-form-container #submit:hover {
-      color: #1262b3;
+      color: #628db9;
     }
     
     .contact-container .address-container h2, .contact-container .address-container div {
@@ -463,6 +471,20 @@ background: linear-gradient(to right bottom);
     .contact-container .address-container div, .contact-container .address-container p {
       font-size: 0.85em;
     }
+    #submit{
+      background-color: #a7afb7;
+      border-radius: 20px;
+      width: 100%;
+    }
+    #submit:hover{
+      background-color: #cddae7;
+    }
+    form div a{
+      text-decoration: none;
+      font-size:xx-large;
+      font-weight: 800;
+    }
+
 
     /* Responsiveness */
 
