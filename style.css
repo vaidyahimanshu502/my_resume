@@ -8,7 +8,7 @@ main{
 /*Body header*/
 #body-header{
     height: 65vh;
-    background-image: linear-gradient(blue, red);
+    background-image: linear-gradient(to bottom right,blue, red, black, yellow, green, skyblue);
     
     background-size: cover;
     background-position: bottom;
